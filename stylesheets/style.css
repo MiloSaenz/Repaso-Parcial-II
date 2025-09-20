@@ -1,0 +1,8 @@
+h1{
+    color:orange
+}
+.products{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+}

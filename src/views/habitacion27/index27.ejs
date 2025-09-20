@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Carros</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <h1>Lista de Carros</h1>
+    <a href="/habitacion27/create">Agregar nuevo carro</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Marca</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% carros.forEach(carro => { %>
+                <tr>
+                    <td><%= carro.id %></td>
+                    <td><a href="/habitacion27/<%= carro.id %>"><%= carro.marca %></a></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
